@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  padding: 150px 24px;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+}
+.woman-desctop,
+.box,
+.desctop-pattern {
+  display: none;
+}
+.container {
+  background-color: white;
+  padding-bottom: 50px;
+  border-radius: 23px;
+}
+header {
+  position: relative;
+}
+.images {
+  margin-top: 40px;
+  width: 75%;
+  transform: translate(15%, -60%);
+}
+.mobile-pattern {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -10%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1e1f36;
+  text-align: center;
+  margin-bottom: 40px;
+}
+p {
+  font-size: 14px;
+  color: #4b4c5f;
+  margin-bottom: 18px;
+}
+.second-p {
+  display: none;
+  line-height: 18px;
+  max-width: 279px;
+}
+#bold-text {
+  font-weight: 700;
+  line-height: 16px;
+  color: #1e1f36;
+}
+.small-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  color: #fff;
+  width: 100%;
+  padding: 0 24px;
+  margin-top: -80px;
+}
+.arrow {
+  width: 8px;
+  height: 4px;
+  margin-top: -12px;
+}
+hr {
+  background: #e8e8ea;
+  height: 1px;
+  margin-bottom: 19px;
+}
+.visible .second-p {
+  display: block;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    padding: auto;
+    height: 100vh;
+  }
+  .woman-mobile,
+  .mobile-pattern {
+    display: none;
+  }
+  .woman-desctop {
+    display: block;
+    width: 120%;
+  }
+  .box {
+    display: block;
+    width: 45%;
+    transform: translate(-55%, 195%);
+  }
+  .desctop-pattern {
+    display: block;
+    width: 130%;
+    margin-top: -380px;
+  }
+  .images {
+    transform: translate(0, -22%);
+  }
+  .container {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 540px;
+  }
+  .content {
+    margin-top: 65px;
+    width: 80%;
+    padding-bottom: 0;
+  }
+  h1 {
+    margin-bottom: 45px;
+  }
+}
